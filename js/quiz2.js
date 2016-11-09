@@ -8,8 +8,35 @@
 (function($){
 	$('.links li a').on('click', function(e) {
 		e.preventDefault()
-		alrt('you clicked a link, good for you');
+		alert('you clicked a link, good for you');
 	});
-
 	console.log("this is a message for you!!!")
-})(jQery);
+})(jQuery);
+
+var ol = document.getElementsByTagName("ol");
+var li = ol[0].getElementsByTagName("li");
+for(var i=0; i<li.length; i++){
+	li[i].innerHTML = "<font color = \"#00"+ (i+6).toString()+(i+6).toString()+(i+6).toString()+(i+6).toString()
+											+"\"> " + (i+2) + " cat </font>";
+}
+
+function accordionclick(id){
+	var acc = document.getElementById(id);
+	if(acc.className.indexOf("show") == -1){
+		acc.className += "-show";
+	}else{
+		acc.className = acc.className.replace("-show", "");
+	}
+}
+
+function magic(event){
+	$("body").html("<section>Goodbye my friend! :(</section>");
+}
+
+function happy(event){
+	$("body").html("");
+	var j;
+	for(j=0; j<1000; j++){
+		$("body").append("<img src='./images/parrot.gif'/>");
+	}
+}

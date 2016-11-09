@@ -7,21 +7,50 @@
 html, bdy {
 	font-family: Helvetica, Arial, sans-serif;
 	background: #eeee;
+	font-size: .625em;
 }
 
 p {
 	margin: 10px 0;
 	font-weight: bold
 }
-
+p:hover{
+	margin-left: 50px;
+}
 section {
 	margin-bottom: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
 }
-
+section:hover{
+	background-color: #BABCD2;
+}
 ul {
 	list-style: none;
 }
 
-ul {
-	list-style: none;
+#thirdSection{
+	border: none;
+}
+#thirdSection:hover{
+	background-color: white;
+}
+.accordion{
+	outline: none;
+	border: none;
+	background-color: #BABCD2;
+	width: 100%;
+	padding: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+.accordion:hover{
+	background-color: #6E7B8B;
+}
+.accordion-content{
+	display: none;
+}
+.accordian-content-show{
+	display: block;
 }
